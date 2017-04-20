@@ -1,0 +1,13 @@
+applications:
+- path: target/TomcatHelloWorldApp.war
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: TestingAppEmp
+  host: TestingAppEmp
+  disk_quota: 1024M
+  services:
+  - EmpaysSample-personality_insights
+  - postgresql-KirtiTest
+  - ElephantSQL-Kirti
+  buildpack: java_buildpack
